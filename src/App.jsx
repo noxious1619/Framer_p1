@@ -157,15 +157,67 @@ import '../styles/global.css';
 
 //-----------useAnimationControls--------
 
-import React from 'react'
+// import { React, useState } from 'react'
+// import { motion, useAnimationControls } from 'framer-motion';
 
-const App = () => {
-  return (
-    <div>App</div>
-  )
-}
+// const App = () => {
 
-export default App
+//   const controls = useAnimationControls();
+//   const [flipped, setFlipped] = useState(false);
+
+  
+//   const handleClick = () => {
+//     setFlipped(prev => {
+//       const newState = !prev;
+//       if (newState) {
+//         controls.start("flip"); 
+//       } else {
+//         controls.start("initial"); 
+//       }
+//       return newState;
+//     });
+//   };
+
+//   return (
+//     <div
+//       style={{
+//         display: "grid",
+//         placeContent: "center",
+//         height: "100vh",
+//         gap: "0.8rem",
+//         width: '100vw',
+//       }}
+//     >
+//       <button 
+//         onClick={handleClick} className="example-button">
+//           Flip it!
+//       </button>
+
+//       <motion.div
+//         style={{
+//           width: 150,
+//           height: 150,
+//           background: "blue",
+//         }}
+//         variants={{
+//           initial: {
+//             rotate: "0deg",
+//           },
+//           flip: {
+//             rotate: "360deg",
+//           },
+//         }}
+//         initial="initial"
+//         animate={controls}
+//       >
+
+//       </motion.div>
+
+//     </div> 
+//   )
+// }
+
+// export default App
 
 // -------end-----------------------
 
